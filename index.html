@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregnancy Diet & Exercise App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pregnancy Diet & Exercise App</h1>
+        <div class="pic-container">
+            <img src="./images/pregnancy pic.PNG" alt="">
+            
+        </div>
+    
+        <form id="pregnancyForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="weeks">Weeks of Pregnancy:</label>
+            <input type="number" id="weeks" name="weeks" min="1" max="40" required>
+    
+            <label for="babyWeight">Baby Weight (in grams):</label>
+            <input type="number" id="babyWeight" name="babyWeight" required>
+    
+            <label for="medicalCondition">Medical Conditions (if any):</label>
+            <select id="medicalCondition" name="medicalCondition">
+                <option value="none">None</option>
+                <option value="diabetes">Gestational Diabetes</option>
+                <option value="hypertension">High Blood Pressure</option>
+                <option value="hypotension">Low Blood Pressure</option>
+                <option value="cholesterol">High Cholesterol</option>
+                <option value="thyroid">Thyroid Issues</option>
+            </select>
+    
+            <button type="submit">Get Recommendations</button>
+        </form>
+    
+        <div id="recommendations" class="recommendations">
+
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

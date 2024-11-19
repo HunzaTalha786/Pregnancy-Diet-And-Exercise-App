@@ -1,0 +1,203 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+
+body {
+    background-color: rgb(255, 249, 251);
+    color: #333;
+    padding: 20px;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.pic-container {
+    width: max-content;
+    margin: auto;
+    overflow: hidden; 
+    margin-bottom: 20px;
+}
+.pic-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+h1 {
+    text-align: center;
+    color: palevioletred;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+label {
+    font-size: 1rem;
+    color: #555;
+    text-align: left;
+    width: 100%;
+}
+
+input, select {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid palevioletred;
+
+    border-radius: 6px;
+    width: 100%; 
+}
+button {
+    padding: 12px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: palevioletred;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; 
+}
+
+button:hover {
+    background-color: pink;
+    color: palevioletred;
+}
+
+
+/* Recommendations Section*/
+.recommendations {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: rgb(255, 249, 251);
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    display: none; 
+}
+
+.recommendations h2 {
+    font-size: 1.6rem;
+    color: palevioletred;
+    margin-bottom: 20px;
+}
+.recommendations h3 {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    color: palevioletred;
+    margin-bottom: 10px;
+}
+.recommendations h4{
+    
+    color: palevioletred;
+    margin-bottom: 10px;
+}
+/* Lists Styling */
+.recommendations ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.recommendations ul li {
+    margin-bottom: 10px;
+   
+}
+
+
+.section {
+    background-color: rgb(255, 228, 232);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 2px 10px white;
+
+}
+
+.calories, .food-meals {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #eef7e8;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px white;
+}
+
+.calories {
+    background-color: rgb(255, 228, 232);
+    box-shadow: 0 2px 10px white;
+}
+
+.food-meals {
+    
+    background-color: rgb(255, 228, 232);
+}
+.section-protein{
+  
+    background-color: rgb(255, 228, 232);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 2px 10px white;
+
+}
+.section-iron{
+    
+    background-color: rgb(255, 228, 232);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 2px 10px white;
+
+}
+.section-calcium{
+    background-color: rgb(255, 228, 232);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 2px 10px white;
+}
+
+/* Media Query for Smaller Screens */
+@media(max-width: 850px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    .pic-container {
+        width: 100%;
+        border: none; 
+    }
+
+    input, select, button {
+        width: 100%; 
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .recommendations {
+        padding: 20px;
+    }
+
+    .recommendations h2 {
+        font-size: 1.4rem; 
+    }
+
+    .recommendations h3 {
+        font-size: 1.2rem; 
+    }
+}
